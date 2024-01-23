@@ -1,0 +1,10 @@
+.border-dashed{
+    border: 2px dashed slategrey;
+    width: 74%;
+    
+    height: 150px;
+    border-left: 0;
+    border-right: 0;
+    
+}
+

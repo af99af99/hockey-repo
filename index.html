@@ -4,11 +4,664 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hockey</title>
+    <!---font add-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!--tailwind and daisy ui-->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .font-manrope {
+        font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 <body>
+    <header>
+            <nav class="flex lg:ml-[120px] lg:w-[100%]  ">
+                
+                    <div class="navbar sm:relative items-center">
+                        <a class="btn btn-ghost text-xl ml-10 sm:absolute">Hockey<span class="text-red-600 font-extrabold">'</span>s</a>
+                          
+                           <div class="justify-between absolute items-center lg:ml-72">
+                             <!--try nav-->
+                             <div class=" text-black">
+                                <ul class="hidden lg:flex items-center lg:gap-10 ">
+                                    <li><a href="">HOME</a></li>
+                                    <li><a href="">ABOUT </a></li>
+                                    <li><a href="">PAGES </a></li>
+                                  <li><a href="">BLOG </a></li>
+                                    <li><a href="">CONTACT  </a></li>
+                                </ul>
+                              </div>
+
+                             <div class="dropdown sm:absolute ml-4 lg:hidden">
+                                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                                </div>
+                                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                  <li><a>HOME</a></li>
+                                  <li><a>ABOUT</a></li>
+                                  <li><a>PAGES</a></li>
+                                  <li><a>BLOG</a></li>
+                                  <li><a>CONTANT</a></li>
+                                </ul>
+                              </div>
+                           </div>
+                        
+                        
+                         <div class="navbar-end lg:ml-96">
+                          <button class="btn btn-ghost btn-circle hidden lg:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                          </button>
+                          <button class="btn bg-red-600 ml-10  text-white font-semibold">Get Ticket</button>
+                        
+                        </div>
+                      </div>
+                    
+            </nav>
+    </header>
+
+
+
+    <main>
+      <div>
+        <div class="carousel ml-8 mr-4 w-[75%] lg:w-[75%] lg:ml-[170px] rounded-lg ">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+         
+        </div>
+      </div>
+      <!--black text box-->
+<div class="w-[350px] lg:w-[550px] lg:ml-[600px] lg:-translate-y-36 ml-[12px] ">
+ <div class="bg-black ml-4 p-2 lg:p-4 text-white rounded-lg">
+ <h3 class="text-center font-semibold">Meet ALL THE FIGHTERS FROM NEAR</h3>
+ <p class=" font-extralight lg:font-light text-slate-600 text-center rounded-lg w-400px]">
+  A large part of his day-to-day life consists of practicing <br>
+   these skills, either on the training field</p>
+ </div>
+
+</div>  
+
+<!-- football team -->
+<div class=" w-[340px] ml-6 lg:w-[1000px] mt-8 lg:ml-[195px] lg:h-[150px] bg-white border-dashed lg:mt-8 border-cyan-800 border-2 border-l-0 border-r-0 relative">
+  <div class="text-center absolute mt-8 ml-8  lg:ml-80 lg:mt-28">
+    <h2 class="font-bold lg:-mt-20  text-2xl"> Professional Hockeys Club</h2>
+    <p class="text-sm"> A large part of his day-to-day life consists of practicing <br>
+      these skills, either on the training field</p>
+  </div>
+</div>
+<!--prayer   experience   senior-------->
+
+    <!--first card-->
+    <div class="container  lg:ml-6">
+      <div class="grid  grid-cols-1  lg:grid-cols-4 h-96 lg:gap-4 relative w-[90%]">
+
+
+        <div class="card lg:w-[250px] lg:ml-[80px] relative rounded-none">
+          <figure class=" pt-12">
+            <img src="images/Group 9 (1).svg" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prayer Facility</h2>
+            <p class="text-xs text-slate-400">Amet consectetur. Condimentum <br>
+               dignissim adipiscing .</p>
+            </div>
+            <p class="text-black absolute mt-[80px] ml-[165px] lg:mt-[90px] lg:ml-[90px] font-extrabold text-4xl">87%</p>
+       </div>
+
+
+
+        <!--second card-->
+
+
+        <div class="card lg:w-[250px] lg:ml-[80px] relative rounded-none">
+          <figure class=" pt-12">
+            <img src="images/Group 9 (2).svg" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prayer Facility</h2>
+            <p class="text-xs text-slate-400">Amet consectetur. Condimentum <br>
+               dignissim adipiscing .</p>
+            </div>
+            <p class="text-black absolute mt-[80px] ml-[165px] lg:mt-[90px] lg:ml-[90px] font-extrabold text-4xl">95%</p>
+       </div>
+
+        <!--third card-->
+
+        <div class="card lg:w-[250px] lg:ml-[80px] relative rounded-none">
+          <figure class=" pt-12">
+            <img src="images/Group 9 (3).svg" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prayer Facility</h2>
+            <p class="text-xs text-slate-400">Amet consectetur. Condimentum <br>
+               dignissim adipiscing .</p>
+            </div>
+            <p class="text-black absolute mt-[80px] ml-[165px] lg:mt-[90px] lg:ml-[90px] font-extrabold text-4xl">90%</p>
+       </div>
+
+     <!---fourth card-->
+
+     <div class="card lg:w-[250px] relative lg:ml-[80px] rounded-none">
+      <figure class=" pt-12">
+        <img src="images/Group 9.svg" alt="" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Prayer Facility</h2>
+        <p class="text-xs text-slate-400">Amet consectetur. Condimentum <br>
+           dignissim adipiscing .</p>
+        </div>
+        <p class="text-black absolute mt-[80px] ml-[165px] lg:mt-[90px] lg:ml-[90px] font-extrabold text-4xl">80%</p>
+   </div>
+
+      </div>
+</div>
+
+<!-----------program section------------------------->
+<div class=" w-[340px] ml-6 lg:w-[1000px] mt-[850px] lg:ml-[195px] lg:h-[150px] bg-white border-dashed lg:mt-8 border-cyan-800 border-2 border-l-0 border-r-0 relative">
+  <div class="text-center absolute mt-8 ml-8  lg:ml-80 lg:mt-28">
+    <h2 class="font-bold lg:-mt-20  text-2xl"> Professional Hockeys Club</h2>
+    <p class="text-sm"> A large part of his day-to-day life consists of practicing <br>
+      these skills, either on the training field</p>
+  </div>
+</div>
+<!-----------------------pic 3 part------------>
+
+<div class=" grid grid-cols-1 lg:grid-cols-2 lg:ml-36 lg:mt-10 mt-20">
+  <!--pic 1-->
+  <div class="card lg:w-[480px] lg:h-[300px] w-[320px] h-[250px] ml-10 bg-base-100 shadow-xl image-full">
+    <figure><img src="Images/2.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title lg:mt-14">Junior Program</h2>
+      <p>A large part of his day-to-day life consists of practicing <br>
+        these skills, either on the training field</p>
+      <div class="card-actions justify-start">
+        <button class="btn bg-red-600 border-none text-white">Register Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!--pic 2-->
+  <div class="card lg:w-[480px] lg:h-[300px] lg:-ml-10 lg:mt-0 mt-10 w-[320px] h-[250px]  ml-10 bg-base-100 shadow-xl image-full">
+    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title lg:mt-14">Junior Program</h2>
+      <p>A large part of his day-to-day life consists of practicing <br>
+        these skills, either on the training field</p>
+      <div class="card-actions justify-start">
+        <button class="btn bg-red-600 border-none text-white">Register Now</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-------------- pic 3--------------- -->
+   <div class="card  lg:w-[1000px] lg:h-[300px]  lg:ml-48 lg:mt-10 w-[320px] h-[250px] mt-10 ml-10 bg-base-100 shadow-xl image-full">
+    <figure ><img class="lg:w-[1000px] lg:h-[300px]" src="Images/4.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title lg:mt-14">Junior Program</h2>
+      <p class="font-thin text-sm">A large part of his day-to-day life consists of practicing <br>
+        these skills, either on the training field.A large part of his day-to-day life consists of practicing <br>
+        these skills, either on the training field</p>
+      <div class="card-actions justify-start">
+        <button class="btn bg-red-600 border-none text-white">Register Now</button>
+      </div>
+    </div>
+  </div>
+<!----------------------------->
+  <!-----------program section------------------------->
+
+  <div class=" w-[340px] ml-6 lg:w-[1000px] mt-8 lg:ml-[195px] lg:h-[150px] bg-white border-dashed lg:mt-8 border-cyan-800 border-2 border-l-0 border-r-0 relative">
+    <div class="text-center absolute mt-8 ml-8  lg:ml-80 lg:mt-28">
+      <h2 class="font-bold lg:-mt-20  text-2xl"> Professional Hockeys Club</h2>
+      <p class="text-sm"> A large part of his day-to-day life consists of practicing <br>
+        these skills, either on the training field</p>
+    </div>
+  </div>
+
+
+<!-- -------------------------------excessories------------------------ -->
+<div class=" grid grid-cols-1 lg:grid-cols-2">
+  <!--card one-->
+  <div class="hero w-[350px] h-[450px] rounded-lg lg:w-[496px] mt-[10px] ml-[16px] lg:h-[240px] lg:ml-[190px] bg-white  lg:mt-8  border-gray-300  border-2 ">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="Images/5.png" class="lg:max-w-sm w-[260px] lg:h-[180px] lg:w-[160px] h-[220px] rounded-lg shadow-2xl" />
+
+   <div>
+    <div class="rating gap-2">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <h6>5.0</h6>
+      <img src="Images/Frame.png" alt="">
+      <h6>20</h6>
+      
+        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+        <h6>200</h6>
+
+    </div>
+
+    <div >
+      <h1 class="text-lg font-bold">World Cup Flags Football</h1>
+      <p class="py-6 text-sm ">World Games formalizes flag football as an <br>
+         international sport, which promotes the values </p>
+     <div class="flex gap-2">
+      <h4>Price - $22.00</h4>
+      <img src="Images/card.png" alt="">
+      <h6>Delivery Fee : Free</h6>
+     </div>
+
+    </div>
+   </div>
+
+    </div>
+  </div>
+
+  <!-- ------------card 2----------------------- -->
+  <div class="hero w-[350px] h-[450px] lg:w-[496px] rounded-lg mt-[10px] ml-[16px] lg:h-[240px] lg:ml-[24px] bg-white  lg:mt-8  border-gray-300 border-2">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="Images/6.png" class="max-w-sm w-[260px] h-[220px] lg:h-[180px] lg:w-[160px] rounded-lg shadow-2xl" />
+
+   <div>
+    <div class="rating gap-2">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <h6>5.0</h6>
+      <img src="Images/Frame.png" alt="">
+      <h6>20</h6>
+      
+        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+        <h6>200</h6>
+
+    </div>
+
+    <div >
+      <h1 class="text-lg font-bold">World Cup Flags Football</h1>
+      <p class="py-6 text-sm ">World Games formalizes flag football as an <br>
+         international sport, which promotes the values </p>
+     <div class="flex gap-2">
+      <h4>Price - $22.00</h4>
+      <img src="Images/card.png" alt="">
+      <h6>Delivery Fee : Free</h6>
+     </div>
+
+    </div>
+   </div>
+
+    </div>
+  </div>
+
+    <!-- ------------card 3----------------------- -->
+    <div class="hero w-[350px] h-[450px] lg:w-[496px] rounded-lg mt-[10px] ml-[16px] lg:h-[240px] lg:ml-[190px] bg-white  lg:mt-8  border-gray-300 border-2">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="Images/7.png" class="max-w-sm w-[260px] h-[220px] lg:h-[180px] lg:w-[160px] rounded-lg shadow-2xl" />
+  
+     <div>
+      <div class="rating gap-2">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <h6>5.0</h6>
+        <img src="Images/Frame.png" alt="">
+        <h6>20</h6>
+        
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <h6>200</h6>
+  
+      </div>
+  
+      <div >
+        <h1 class="text-lg font-bold">World Cup Flags Football</h1>
+        <p class="py-6 text-sm ">World Games formalizes flag football as an <br>
+           international sport, which promotes the values </p>
+       <div class="flex gap-2">
+        <h4>Price - $22.00</h4>
+        <img src="Images/card.png" alt="">
+        <h6>Delivery Fee : Free</h6>
+       </div>
+  
+      </div>
+     </div>
+  
+      </div>
+    </div>
+
+      <!-- ------------card 4----------------------- -->
+  <div class="hero w-[350px] h-[450px] lg:w-[496px] rounded-lg mt-[10px] ml-[16px] lg:h-[240px] lg:ml-[24px] bg-white  lg:mt-8  border-gray-300 border-2">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="Images/8.png" class="max-w-sm w-[260px] h-[220px] lg:h-[180px] lg:w-[160px] rounded-lg shadow-2xl" />
+
+   <div>
+    <div class="rating gap-2">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <h6>5.0</h6>
+      <img src="Images/Frame.png" alt="">
+      <h6>20</h6>
+      
+        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+        <h6>200</h6>
+
+    </div>
+
+    <div >
+      <h1 class="text-lg font-bold">World Cup Flags Football</h1>
+      <p class="py-6 text-sm ">World Games formalizes flag football as an <br>
+         international sport, which promotes the values </p>
+     <div class="flex gap-2">
+      <h4>Price - $22.00</h4>
+      <img src="Images/card.png" alt="">
+      <h6>Delivery Fee : Free</h6>
+     </div>
+
+    </div>
+   </div>
+
+    </div>
+  </div>
+
+    <!-- ------------card 5----------------------- -->
+    <div class="hero w-[350px] h-[450px] lg:w-[496px] rounded-lg mt-[10px] ml-[16px] lg:h-[240px] lg:ml-[190px] bg-white  lg:mt-8  border-gray-300 border-2">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="Images/9.png" class="max-w-sm w-[260px] h-[220px] lg:h-[180px] lg:w-[160px] rounded-lg shadow-2xl" />
+  
+     <div>
+      <div class="rating gap-2">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <h6>5.0</h6>
+        <img src="Images/Frame.png" alt="">
+        <h6>20</h6>
+        
+          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+          <h6>200</h6>
+  
+      </div>
+  
+      <div >
+        <h1 class="text-lg font-bold">World Cup Flags Football</h1>
+        <p class="py-6 text-sm ">World Games formalizes flag football as an <br>
+           international sport, which promotes the values </p>
+       <div class="flex gap-2">
+        <h4>Price - $22.00</h4>
+        <img src="Images/card.png" alt="">
+        <h6>Delivery Fee : Free</h6>
+       </div>
+  
+      </div>
+     </div>
+  
+      </div>
+    </div>
+
+      <!-- ------------card 6----------------------- -->
+  <div class="hero w-[350px] h-[450px] lg:w-[496px] rounded-lg mt-[10px] ml-[16px] lg:h-[240px] lg:ml-[24px] bg-white  lg:mt-8  border-gray-300 border-2">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="Images/10.png" class="max-w-sm w-[260px] h-[220px] lg:h-[180px] lg:w-[160px] rounded-lg shadow-2xl" />
+
+   <div>
+    <div class="rating gap-2">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <h6>5.0</h6>
+      <img src="Images/Frame.png" alt="">
+      <h6>20</h6>
+      
+        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+        <h6>200</h6>
+
+    </div>
+
+    <div >
+      <h1 class="text-lg font-bold">World Cup Flags Football</h1>
+      <p class="py-6 text-sm ">World Games formalizes flag football as an <br>
+         international sport, which promotes the values </p>
+     <div class="flex gap-2">
+      <h4>Price - $22.00</h4>
+      <img src="Images/card.png" alt="">
+      <h6>Delivery Fee : Free</h6>
+     </div>
+
+    </div>
+   </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- football team -->
+<div class=" w-[340px] ml-6 lg:w-[1000px] mt-8 lg:ml-[195px] lg:h-[150px] bg-white border-dashed lg:mt-8 border-cyan-800 border-2 border-l-0 border-r-0 relative">
+  <div class="text-center absolute mt-8 ml-8  lg:ml-80 lg:mt-28">
+    <h2 class="font-bold lg:-mt-20  text-2xl"> Clients Question</h2>
+    <p class="text-sm"> A large part of his day-to-day life consists of practicing <br>
+      these skills, either on the training field</p>
+  </div>
+</div>
+
+<!---------------accordian part------------------------>
+<div class="flex flex-col lg:flex-row lg:w-[1000px] w-[350px] h-[850px] mt-8 lg:mt-12 lg:h-[450px] ml-[24px] lg:ml-[194px] rounded-lg  border-gray-200 border-2">
+
+  <div class="flex-1 lg:mt-6 lg:ml-6 ml-6 mt-6 lg:mr-4">
+    <img class="lg:h-[400px] lg:w-[440px] h-[300px] w-[290px]" src="Images/11.png" alt="">
+  </div>
+
+  <div class="flex-1 lg:mt-6 lg:ml-4 lg:mr-6 ">
+    <div class="collapse collapse-plus ">
+      <input  type="radio" name="my-accordion-3" checked="checked" /> 
+      <div class="collapse-title text-xl font-medium">
+        Our Equipment
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus  border-t-2 border-b-2 rounded-none border-gray-300">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Hockey Training
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus border-b-2 rounded-none border-gray-300">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus border-b-2 rounded-none border-gray-300">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus border-b-2 rounded-none border-gray-300 ">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus ">
+      <input type="radio" name="my-accordion-3" /> 
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content"> 
+        <p>hello</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<div>
+   <!-----------get in touch------------------------->
+
+   <div class=" w-[340px] ml-6 lg:w-[1000px] mt-8 lg:ml-[195px] lg:h-[150px] bg-white border-dashed lg:mt-8 border-cyan-800 border-2 border-l-0 border-r-0 relative">
+    <div class="text-center absolute mt-8 ml-8  lg:ml-80 lg:mt-28">
+      <h2 class="font-bold lg:-mt-20  text-2xl"> Get In Touch</h2>
+      <p class="text-sm"> A large part of his day-to-day life consists of practicing <br>
+        these skills, either on the training field</p>
+    </div>
+  </div>
+</div>
+
+<!----------------------log in form part------------------------------->
+<div class="flex flex-col lg:flex-row">
+
+  <!-- -phone -->
+  <div class="flex flex-col-1">
+    
+    <div class="border-2 rounded-2xl h-[640px] w-[280px] ml-14  lg:ml-[190px] mt-8 border-gray-300">
+
+      <div class="hero ml-6 mt-6 rounded-2xl bg-base-200 h-[180px] w-[230px]">
+        <div class="hero-content items-start -ml-14 flex-col ">
+          <img src="Images/Group 1171275317.png" class="max-w-sm rounded-lg items-start shadow-2xl" />
+          <div>
+            <h1 class="text-xl items-start font-bold">Phone Number</h1>
+            <p class="py-6 items-start">01856620255</p>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hero ml-6 mt-6 rounded-2xl bg-pink-100 h-[180px] w-[230px]">
+        <div class="hero-content items-start -ml-14 flex-col ">
+          <img src="Images/Group 1171275318.png" class="max-w-sm rounded-lg items-start shadow-2xl" />
+          <div>
+            <h1 class="text-xl items-start font-bold">Phone Number</h1>
+            <p class="py-6 items-start">01856620255</p>
+    
+          </div>
+        </div>
+      </div>
+
+      <div class="hero ml-6 mt-6 rounded-2xl bg-blue-50 h-[180px] w-[230px]">
+        <div class="hero-content items-start -ml-14 flex-col ">
+          <img src="Images/Group 1171275321.png" class="max-w-sm rounded-lg items-start shadow-2xl" />
+          <div>
+            <h1 class="text-xl items-start font-bold">Phone Number</h1>
+            <p class="py-6 items-start">01856620255</p>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+ </div>
+
+
+ <!-- --------------------input text---------------- -->
+ <div class="flex-1 w-[280px] ml-14 lg:ml-2">
+<div class="flex flex-col lg:flex-row lg:ml-7 gap-2 lg:mt-10">
+
+  <div class="lg:w-[340px]">
+    <label for="price" class="block text-sm  leading-6 font-bold text-gray-900">Your Name</label>
+    <div class="relative mt-2 border-none rounded-md shadow-sm">
+      <input type="text" name="price" id="price" class="block w-full bg-slate-100 rounded-md border-none py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300
+       placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your full name">
+    </div>
+  
+  </div>
+  
+  <div class="lg:w-[340px]">
+    
+    <label for="price" class="block text-sm  leading-6 font-bold text-gray-900">Your Email</label>
+    <div class="relative mt-2 border-none rounded-md shadow-sm">
+      <input type="text" name="price" id="price" class="block w-full bg-slate-100 rounded-md border-none py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300
+       placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
+    </div>
+  </div>
+</div>
+
+
+<div class="flex flex-col lg:flex-row lg:ml-7 lg:mt-4 gap-2">
+  <div class="lg:w-[340px]">
+    <label for="price" class="block text-sm  leading-6 font-bold text-gray-900">Your Email</label>
+    <div class="relative mt-2 border-none rounded-md shadow-sm">
+      <input type="text" name="price" id="price" class="block w-full bg-slate-100 rounded-md border-none py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300
+       placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
+    </div>
+  </div>
+
+    <div class="lg:w-[340px]">
+    <label for="price" class="block text-sm  leading-6 font-bold text-gray-900">Your Email</label>
+    <div class="relative mt-2 border-none rounded-md shadow-sm">
+      <input type="text" name="price" id="price" class="block w-full bg-slate-100 rounded-md border-none py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300
+       placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
+    </div>
+   </div>
+
+  </div>
+
+  <!-- --------------message box------------- -->
+  <div>
+    <div class="lg:w-[690px] lg:ml-7 lg:mt-6 ">
+      <label for="price" class="block text-sm  leading-6 font-bold text-gray-900">Your Email</label>
+      <div class="relative mt-2 border-none rounded-md shadow-sm">
+        <input type="text" name="price" id="price" class="block w-full lg:h-[350px] bg-slate-100 rounded-md border-none py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300
+         placeholder:text-gray-400 focus:ring-2 focus:ring-inset text-start focus:ring-indigo-600  sm:leading-6" placeholder="Write your message">
+      </div>
+    </div>
+  
+  </div>
+
+  <button class="btn w-[280px]  lg:w-[700px] lg:mt-6 h-12 mt-6 lg:ml-6 bg-red-600 border-none text-white">Send Message</button>
+  </div>
+
+</div>
+
+<!-- ----------------social media icon-------------------------- -->
+<div >
+  <footer class="footer p-10 relative text-lg ml-[50px] font-bold rounded-lg lg:w-[1010px] w-[290px]  h-[130px] lg:h-[150px] items-center lg:ml-[190px] mt-4 bg-slate-200">
+    <nav class="lg:ml-[400px] ml-[50px]">
+      <header class="footer-title text-black font-bold absolute">Social Media</header> 
+      <div class="grid grid-flow-col mt-7 gap-4 ml-[14px] absolute">
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+      </div>
+    </nav>
+  </footer>
+</div>
+
+</main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
